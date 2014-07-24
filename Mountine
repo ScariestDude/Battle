@@ -1,0 +1,22 @@
+public class Mountain extends Warrior implements WarriorsSkills {
+    int str = 9;
+    int dex = 2;
+    int def = 5;
+    int hp = 1500;
+
+    @Override
+    public int atack() {
+        int luck = (int) (Math.random() * 10);
+        int dmg = (str * dex * luck);
+        return dmg;
+    }
+
+    @Override
+    public void BattleCry() {
+        System.out.println("Fuck you!");
+    }
+
+    @Override
+    public void toBeDead() {
+     System.out.println("I'll blow your mind");
+    }
