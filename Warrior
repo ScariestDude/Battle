@@ -1,0 +1,15 @@
+public class Warrior {
+    boolean life = true;
+    int str;
+    int dex;
+    int def;
+    int hp;
+    int dmg;
+
+    public void setDmg(int dmg) {
+        this.dmg = dmg;
+    }
+    public int getDmg() {
+        return dmg;
+    }
+}
