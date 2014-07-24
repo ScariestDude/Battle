@@ -1,0 +1,21 @@
+public class Oberin extends Warrior implements WarriorsSkills {
+    int str = 3;
+    int dex = 8;
+    int def = 4;
+    int hp = 1000;
+
+    @Override
+    public void BattleCry() {
+        System.out.println("You,ve kiled my sister!!!! Arrrr!!!!");
+    }
+    @Override
+    public int atack() {
+    int luck = (int) (Math.random() * 12);
+        int dmg = (str * dex * luck);
+        return dmg;
+    }
+    @Override
+    public void toBeDead() {
+    System.out.println("I have a horrible headache");
+    }
+}
