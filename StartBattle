@@ -1,0 +1,24 @@
+public class StartBattle {
+    public static void main (String[] args){
+        Oberin o = new Oberin();
+        Mountain m = new Mountain();
+        boolean finish = false;
+        while (finish == false) {
+            o.BattleCry();
+            m.hp = m.hp - o.atack();
+            System.out.println("*Оберін атакує, у гори залишилось " + m.hp + " хп*");
+            m.BattleCry();
+            o.hp = o.hp - m.atack();
+            System.out.println("*Гора атакує, у Оберіна залишилось " + o.hp + " хп*");
+            if (o.hp < 0){
+                o.toBeDead();
+                break;
+            }
+            if (m.hp < 0){
+                m.toBeDead();
+                break;
+            }
+        }
+
+    }
+}
