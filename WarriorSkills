@@ -1,0 +1,5 @@
+public interface WarriorsSkills {
+    int atack();
+    void BattleCry();
+    void toBeDead();
+}
